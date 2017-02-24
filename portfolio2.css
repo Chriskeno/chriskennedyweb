@@ -42,7 +42,8 @@ left: 2em;
 
 }
 
-.quote p {padding-left: 2em;}
+.quote p {padding-left: 2em;
+line-height: 1.4em;}
 
 hr {border-color:darkorange;
 width: 100%;
@@ -62,15 +63,18 @@ padding-left: 5em;
 font-size:1.4em;
 position: relative;
 bottom: .9em;
-color:darkgray;}
+color:darkgray;
+padding-top: 1em;}
 
 .about-me p {font-size: 
 .6em;
 position: relative;
     bottom: 1em;
 color:darkgray;
-line-height: 2em;
-padding-left: 4em;}
+line-height: 1.8em;
+padding-left:1em;
+padding-right: 1em;
+width: 100%}
 /* Typography */
 body {
    font-family: 'monserrat', sans-serif, serif;
@@ -175,33 +179,18 @@ color: gray;}
   position:relative;
   width:1000px;
   overflow:hidden;
-  margin:0 auto;
+  margin:0 5em;
 }
-
-
-
-.portfolio .portfolio-margin h1{
-  font-size:34px;
-  color:black;
-  text-align:center;
-  margin-top:120px;
-  letter-spacing:6px;
-  font-weight:bold;
-  text-transform:uppercase;
-  line-height:1.2;
-}
-
-
-
 
 /* Portfolio grid */
 
 .grid{
   margin-top:70px;
-  width:90%;
+  padding-bottom:0px;
+  width:76%;
   position:relative;
-right: 1.1em;
-  margin-bottom:70px;
+right: 0em;
+  margin-bottom:80px;
   overflow:hidden;
 background-color: lightgrey;
 background-image:url(../portfolio-site/images/bedge-grunge.png);
@@ -213,9 +202,10 @@ padding-right: 2em;
 
 .grid li{
   width:285px;
-  margin:0 15px 8px 0;
-  float: left;
+  margin:0 0px 40px 90px;
+  float: right;
   position: relative;
+right:2em;
 
 }
 
@@ -296,12 +286,12 @@ figure.item {
 .6em;
 position: relative;
 top: 2em;
-left:3em;
-width: 81%;
+left:5em;
+width: 50em;
 color:darkgray;
 line-height: 1.8em;
-padding-left:4em;
-padding-right: 4em;
+padding-left:0em;
+padding-right: 0em;
 padding-bottom: 5em;}
 
 .social {background-color:darkorange;}
@@ -314,3 +304,159 @@ padding-top: .4em;
 padding-bottom: .2em;}
 
 figure.item img{-webkit-animation-duration: 2s;}
+
+/*--- Media Queries ---*/
+/*---Ipad---*/
+
+@media (max-width:979px) {
+   
+    
+   nav {position: fixed;
+    z-index: 2;
+top: 0px;
+    left: -3.8em;
+    margin: 0;
+       width: 100%;}
+    
+    .monogram {
+z-index: 1;
+position: fixed;
+left: 11em;
+top: 14em;
+}
+  
+.contact-button {
+    position: fixed;
+    left: 7em;
+    top: 14em;  }  
+        
+
+.quote p {padding-left: 2em;
+    font-size: .9em;}
+    
+    .about-me p{width: 100%;
+    line-height: 1.8em;
+    padding-left: 1em;
+    padding-right: 0em;}
+    
+ .portfolio .portfolio-margin{
+    width:100%;
+  position:relative;
+  overflow:hidden;
+
+
+}
+    
+    .portfolio h1{left: -.7em;}
+    
+    .portfolio{
+  position:relative;
+  width:100%;
+  background:#f3f3f3;
+  z-index:10;
+
+
+}
+    .portfolio-margin {position: relative;
+    right:5em;}
+    
+ .grid{
+  margin-top:10px;
+  width:85%;
+     
+}
+    .grid li{
+  width:270px;
+  margin:0px 26px 30px 0px;
+  float: left;
+  position: relative;
+ left: 0em;
+}
+.grid img{
+  width:220px;
+  float: left;
+  position: relative;
+height: 220px;
+}
+
+.grid .text {
+  position: absolute;
+bottom: 0em;
+left: 0em;
+  width: 220px;
+  height:220px;
+  background: rgba(255,255,257,0.8);
+  z-index: 2;
+  opacity:0;
+    -webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-ms-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;
+}
+.grid .text:hover {
+  opacity:1;
+}
+
+
+.grid p {
+  font-size: 17px;
+  text-align:center;
+padding-top: 3em;
+  padding-bottom:0px;
+  font-weight: bold;
+  letter-spacing:1px;
+  color:darkorange;
+}
+
+.grid p.description {
+    padding-left:0em;
+  font-size: 15px;
+  width:215px;
+  text-align:center;
+  line-height:25px;
+  font-weight: 500;
+  color:gray;
+  position:relative;
+left: 2em;
+}
+
+    figure.item img{position: relative;
+    right: 4em;
+}    
+
+.caption {position: relative;
+right: 14em;
+    padding-top: 1em;}
+    
+    .services p {position: relative;
+    left:3em;
+    margin: 0;
+    width: 27em;}  
+    
+    .social li{position: relative;
+    left: 2em;}
+    
+    .quote {position: relative;
+    left: -1.3em;}  
+    
+    .about-me p{padding-bottom: .6em;
+    width: 120%;
+    position: relative;
+    right: 4em;}
+    
+    .services h1 {position: relative; left: -.2em;}
+    
+    .about-me h1{left: -.7em;}
+    
+    figure.item {width: 130px;
+    }
+    
+    figure.item img {position: relative;
+    right:  6.8em;}
+    
+    .social{width: 90%;}
+    .parallax {
+    /* The image used */
+        background-image: url("../chriskennedyweb/images/patrick-hendry-background2.png"); width: 100%;}
+}
