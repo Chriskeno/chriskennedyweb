@@ -5,6 +5,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="../chriskennedyweb/javaScript/masonry.pkgd.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     
 <title>Chris Kennedy | Designer | Illustrator | coder</title>
@@ -12,6 +13,24 @@
     
  <link href="../chriskennedyweb/portfolio2.css" type="text/css" rel="stylesheet">
 <link href="../chriskennedyweb/animate.css" type="text/css" rel="stylesheet">
+    <script>
+ $(function() {
+   $('a[href*=#]:not([href=#])').click(function() {
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+       var target = $(this.hash);
+       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+       if (target.length) {
+         $('html,body').animate({
+           scrollTop: target.offset().top
+         }, 1000);
+         return false;
+       }
+     }
+   });
+ });
+ </script>
+    
     <style>
         html, body {
     max-width: 100%;
@@ -48,7 +67,7 @@
 </head>
 <body>
 
-<div class="parallax">
+<div class="parallax" id="top">
     <article id="Home">
         <nav>
         <ul>
@@ -59,7 +78,7 @@
             <li><a class="Blog" href="http://kennedy-chris-kennedy.tumblr.com/" target="_blank">Blog</a></li>
         </ul>
      </nav>
-       <section class="monogram">
+       <section class="monogram" href="#top">
            <img src="../chriskennedyweb/images/finished-monogram-for-web.png" height="150px" width="350px"> 
         <h1>UI & UX Designer</h1></section>
  
@@ -70,7 +89,7 @@
 <div class="overscroll" id="About-me" style="height:1000px;font-size:36px">
     
     
-<div class="about-me" id="about-me">
+<div class="about-me" id="About-me">
 <h1>Chris Kennedy</h1>
     <img class="about-me-image" src="images/about-me-image.jpg" width="500px" height="475px">
     <p>My name is Christopher Kennedy and I am an Interaction Design student in Belfast.</p>
@@ -79,7 +98,7 @@
 
     </div>   
     
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio" id="Portfolio">
 <div class="Portfolio1">
     <h1 id="Portfolio">Portfolio</h1>
 <section class="nb-demo">
