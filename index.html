@@ -4,14 +4,46 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../chriskennedyweb/javaScript/masonry.pkgd.min.js"></script>
+
     
 <title>Chris Kennedy | Designer | Illustrator | coder</title>
 <link rel="icon" href="images/favicon-16x16.png" /><link rel="icon" href="images/favicon-16x16.png" /> 
     
-    
-<!--CSS-->
-    <link href="animate.css" type="text/css" rel="stylesheet">
- <link href="../chriskennedyweb/portfolio2.css" type="text/css" rel="stylesheet">    
+ <link href="../chriskennedyweb/portfolio2.css" type="text/css" rel="stylesheet">
+<link href="../chriskennedyweb/animate.css" type="text/css" rel="stylesheet">
+    <style>
+        html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+        .masonry-item {
+            position: relative;
+        }
+        .masonry-item:hover .masonry-content {
+            opacity: 1;
+        }
+        .masonry-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:100%;
+            height: 100%;
+            opacity: 0;
+            transition: all ease-in-out 0.2s;
+            background-color: rgba(243,243,243,0.8);
+            
+        }
+        .masonry-text {
+            width: 90%;
+            padding: 5%;
+            position: absolute;
+            color: darkorange;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 
 </head>
 <body>
@@ -37,11 +69,10 @@
 
 <div class="overscroll" id="About-me" style="height:1000px;font-size:36px">
     
-<div class="quote">
-<hr/><center><p>“The goal of a designer is to listen, observe, understand, sympathize, empathize, synthesize, and glean insights that enable him or her to make the invisible visible.” <cite>–Hillman Curtis</cite></p></center><hr/></div>
     
 <div class="about-me" id="about-me">
-<center><h1>About Me</h1></center>
+<h1>Chris Kennedy</h1>
+    <img class="about-me-image" src="images/about-me-image.jpg" width="500px" height="475px">
     <p>My name is Christopher Kennedy and I am an Interaction Design student in Belfast.</p>
             <p>My main passions involve designing and illustrating, especially vector based art and illustrations. I also have a love of photography. What i love most about being a designer is the process of sketching ideas on paper and taking them to life in the world of pixels and vectors.</p>
         <p>I also love designing interfaces and creating webpages to maximise user experiences; Creating code to become a fully functioning webpage is a skill I want to develop even further.</p>
@@ -51,84 +82,97 @@
         <section class="portfolio" id="portfolio">
 <div class="Portfolio1">
     <h1 id="Portfolio">Portfolio</h1>
+<section class="nb-demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="masonry masonry-columns-3">
 
-    <div class="portfolio-margin">
-    
-    
-    <!-- 1 item portoflio-->
-    
-        <ul class="grid">
-          
-          <li>
-            <a href="https://www.flickr.com/photos/134990026@N08/albums/72157664255063580">
-              <img src="../chriskennedyweb/images/photography.jpg" alt="Photography" />
-                <div class="text">
-                  <p>Photography</p> 
-                  <p class="description">This is a selection of photos took by me for a university project</p>         
-              </div>
-            </a>
-          </li>    
+                    <div class="masonry-item">
+                        <img src="../chriskennedyweb/images/pic1(dotsanddashes).png" class="img-responsive center-block" alt="" height="100%" width="100%">
+                        <div class="masonry-content">
+                            <div class="masonry-text">
+                                <center><p>Illustration</p></center>
+                            </div>
+                        </div>
+                    </div>
 
-          
-       
-          
-          <li>
-            <a href="http://kennedy-chris-kennedy.tumblr.com/tagged/processing">
-              <img src="../chriskennedyweb/images/processing.png" alt="Processing" />
-                <div class="text">
-                  <p>Processing</p> 
-                  <p class="description">I decided to try and learn processing as i wanted to learn other forms of visual coding.</p>           
-              </div>
-            </a>
-          </li>         
-           
-            
-            <li>
-            <a href="http://kennedy-chris-kennedy.tumblr.com/tagged/brand">
-              <img src="../chriskennedyweb/images/wordmarks%20and%20monogram%201.jpg" height="284px" alt="Branding" />
-                <div class="text">
-                  <p>Branding</p> 
-                  <p class="description">The development and creation of my word mark and monogram and other branding work</p>           
-              </div>
-            </a>
-          </li>
-            
-            <li>
-            <a href="http://kennedy-chris-kennedy.tumblr.com/tagged/album-covers">
-              <img src="../chriskennedyweb/images/album-cover.png" height="284px" alt="album covers" />
-                <div class="text">
-                  <p>Album Covers</p> 
-                  <p class="description">One of my first projects was to listen to pieces of music and then design covers to represent the pieces.</p>           
-              </div>
-            </a>
-          </li>
-            
-           
-             <li>
-            <a href="https://www.flickr.com/photos/134990026@N08/albums/72157675710114646">
-              <img src="../chriskennedyweb/images/bee%20trees2.png" height="284px" alt="Illustrator" />
-                <div class="text">
-                  <p>Illustrator</p> 
-                  <p class="description">Selection of work that I have created on Illustrator. </p>           
-              </div>
-            </a>
-          </li>
-            <li>
-            <a href="">
-              <img src="../chriskennedyweb/images/trust.png" height="284px" alt="Trust" />
-                <div class="text">
-                  <p>TRUST</p> 
-                  <p class="description">My masterclass idea for reducing Carbon footprint by encouraging public transport.</p>           
-              </div>
-            </a>
-          </li>
-            
-        </ul>  
-   
-   </div>  
+                    <div class="masonry-item">
+                        <img src="../chriskennedyweb/images/pic2.png" class="img-responsive center-block" alt="" height="100%" width="100%">
+                        <div class="masonry-content">
+                            <div class="masonry-text">
+                                <center><p>Weather app</p></center>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="masonry-item">
+                        <img src="../chriskennedyweb/images/pic6(processing).png" class="img-responsive center-block" alt="" height="100%" width="100%">
+                        <div class="masonry-content">
+                            <div class="masonry-text">
+                                <center><p>Processing</p></center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="masonry-item">
+                        <img src="../chriskennedyweb/images/pic3(shots).png" class="img-responsive center-block" alt="" height="100%" width="100%">
+                        <div class="masonry-content">
+                            <div class="masonry-text">
+                                <center><p>Icons</p></center>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="masonry-item">
+                        <img src="../chriskennedyweb/images/pic6(bird).png" class="img-responsive center-block" alt="" height="100%" width="100%">
+                         <div class="masonry-content">
+                            <div class="masonry-text">
+                                <center><p>New Zealand Bird</p></center>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="masonry-item">
+                        <img src="../chriskennedyweb/images/pic2(photography).png" class="img-responsive center-block" alt="" height="100%" width="100%">
+                        <div class="masonry-content">
+                            <div class="masonry-text">
+                                <center><p>Photography</p></center>
+                            </div>
+                        </div>
+                    </div>
+
+                   <div class="masonry-item">
+                        <img src="../chriskennedyweb/images/pic5(albumcovers).png" class="img-responsive center-block" alt="" height="100%" width="100%">
+                       <div class="masonry-content">
+                            <div class="masonry-text">
+                               <center><p>Album covers</p></center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="masonry-item">
+                        <img src="../chriskennedyweb/images/pic6(monogram).png" class="img-responsive center-block" alt="" height="100%" width="100%">
+                        <div class="masonry-content">
+                            <div class="masonry-text">
+                               <center> <p>Branding</p></center>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
             </div>
-
-        </section>
+        </div>
+    </div>
+</section>
+            </div>
+    </section>
+   
+      <div class="quote">
+<hr/><center><p>“The goal of a designer is to listen, observe, understand, sympathize, empathize, synthesize, and glean insights that enable him or her to make the invisible visible.” <cite>–Hillman Curtis</cite></p></center><hr/></div>      
+     
    <div class="services" id="services">
        <center><h1>Services</h1></center>
        
