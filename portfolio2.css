@@ -78,7 +78,7 @@ body {
 .monogram {
 z-index: 1;
 position: fixed;
-left: 32em;
+left: 29em;
 top: 10em;
 }
 
@@ -95,7 +95,7 @@ a {text-decoration: none;}
 /* button */
 .contact-button {
     position: fixed;
-    left: 18.1em;
+    left: 16.3em;
     top: 14em;
     color:white;
     font:"Montserrat";
@@ -153,7 +153,7 @@ padding-bottom: 3em;}
 
 .portfolio h1{
 font-weight: 100; position: relative;
-left:-4em;
+left:0em;
 padding-top:1em;
 color: gray;}
 
@@ -249,7 +249,7 @@ padding-top:1em;
 text-align: left;
 width:80%;
     position: relative;
-left: 2em;
+left: 3em;
 
 }
 
@@ -259,11 +259,12 @@ line-height: 1.4em;}
 hr {border-color:darkorange;
 width: 100%;
 position: relative;
+right: 1.4em;
 left:0em;
 margin: 1em;}
 .services {padding-top: 2em;}
 
-figure {position: relative; left: 7em;
+figure {position: relative; left: 7.5em;
 padding-top: 2em;}
 
 figure.item {
@@ -302,7 +303,7 @@ padding-bottom: 5em;}
 .social {background-color:darkorange;}
 .social li {display: inline;
 position: relative;
-left: 12em;
+left: 8.8em;
 }
 .social li img {padding-left: 2em;
 padding-top: .4em;
