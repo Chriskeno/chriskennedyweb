@@ -1,0 +1,123 @@
+
+/* Portfolio */
+.portfolio {background:#f3f3f3;
+padding-bottom: 3em;}
+
+.portfolio h1{
+font-weight: 100; position: relative;
+left:0em;
+padding-top:1em;
+color: gray;}
+
+.masonry{
+overflow-x: hidden;
+padding-left:0em;
+  display: block;
+-webkit-column-gap: 0.25rem;
+-moz-column-gap: 0.25rem;
+column-gap: 0.25rem;
+}
+
+/* 5 columns */
+.masonry.masonry-columns-5{
+-webkit-column-count: 5;
+-moz-column-count: 5;
+column-count: 5;
+}
+@media(max-width: 1170px){
+  .masonry.masonry-columns-5{
+-webkit-column-count: 4;
+-moz-column-count: 4;
+column-count: 4;
+}
+}
+
+
+/*-4 columns------*/
+.masonry.masonry-columns-4{
+-webkit-column-count: 4;
+-moz-column-count: 4;
+column-count: 4;
+}
+
+/*-3 columns------*/
+.masonry.masonry-columns-3{
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+}
+
+/*-2 columns------*/
+.masonry.masonry-columns-2{
+-webkit-column-count: 2;
+-moz-column-count: 2;
+column-count: 2;
+}
+
+/*-1 columns------*/
+.masonry.masonry-columns-1{
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+}
+
+
+/*--------Responsive---------*/
+@media(max-width: 991px){
+  .masonry.masonry-columns-4, 
+  .masonry.masonry-columns-5{
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+}
+}
+
+@media(max-width: 767px){
+  .masonry.masonry-columns-4, 
+  .masonry.masonry-columns-5,
+  .masonry.masonry-columns-3{
+-webkit-column-count: 2;
+-moz-column-count: 2;
+column-count: 2;
+}
+}
+
+@media(max-width: 540px){
+  .masonry.masonry-columns-4, 
+  .masonry.masonry-columns-5,
+  .masonry.masonry-columns-3,
+  .masonry.masonry-columns-2{
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+}
+}
+
+/*---- nav---- */
+nav
+{position: fixed;
+    z-index: 2;
+top: 0px;
+    margin: 0;
+    width: 100%;
+}
+
+nav 
+{
+padding: 0em 0;
+margin-bottom: 0.8em;
+}
+
+nav ul 
+{text-align: left;
+}
+
+nav ul li 
+{display: inline;
+margin: 0.5em;
+font-family: montserrat;
+font-size: 1.2em;}
+
+nav a {text-decoration: none;
+color:darkgray;}
+nav a:hover {color:darkorange;}

@@ -12,7 +12,7 @@ box-sizing: border-box;
 }
 
 /* opening screen*/
-body p{font-family: montserrat;}
+body p{font-family:montserrat;}
 .parallax {
     /* The image used */
     background-image: url("../chriskennedyweb/images/patrick-hendry-background2.png");
@@ -71,7 +71,7 @@ body {
    font-family: 'monserrat', sans-serif, serif;
   font-weight: 100;
   color: #ffffff;
-   -webkit-font-smoothing: antialiased;
+
 }
 
 /* monogram and what i do section */
