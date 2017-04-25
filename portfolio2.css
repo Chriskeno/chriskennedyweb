@@ -15,7 +15,7 @@ box-sizing: border-box;
 body p{font-family:montserrat;}
 .parallax {
     /* The image used */
-    background-image: url("../chriskennedyweb/images/patrick-hendry-background2.png");
+    background-image: url("images/patrick-hendry-background2.png");
     
 
     /* Set a specific height */
